@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<h1 id="judul">Hello world!</h1>
+
+<div id="divisi">
+  <p>Test</p>
+</div>
+
+<button id="klik">Rubah</button>
+
+<script>
+  let elemen = document.getElementById("judul");
+  console.log(elemen.textContent);
+
+  let divisi = document.getElementById("divisi");
+
+  const tombol = document.getElementById("klik");
+  tombol.addEventListener("click", ()=>{
+    elemen.style.color = "blue";
+    elemen.textContent = "Rifqi";
+
+    divisi.style.backgroundColor = "red";
+  })
+</script>
+
+</html>
